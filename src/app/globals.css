@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cocoa-50: #fbf6f1;
+  --color-cocoa-100: #f4e7da;
+  --color-cocoa-200: #e6cdb4;
+  --color-cocoa-300: #d3ab86;
+  --color-cocoa-400: #bd8558;
+  --color-cocoa-500: #a76a3d;
+  --color-cocoa-600: #8a5230;
+  --color-cocoa-700: #6b3d26;
+  --color-cocoa-800: #4a2a1b;
+  --color-cocoa-900: #2e1a11;
+  --color-gold-400: #e0b64a;
+  --color-gold-500: #c9992a;
+  --color-rose-soft: #f6dcd8;
+  --color-wa: #25d366;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(circle at 12% -10%, #fdeee2 0%, transparent 45%),
+    radial-gradient(circle at 88% 0%, #f9e4e6 0%, transparent 40%),
+    #fffaf5;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+@layer components {
+  .btn-wa {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[#25d366] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-emerald-600/20 transition hover:bg-[#1fb855] active:scale-[0.98];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cocoa-800 px-6 py-3 text-sm font-semibold text-cocoa-50 transition hover:bg-cocoa-900 active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-cocoa-300 bg-white/70 px-6 py-3 text-sm font-semibold text-cocoa-800 transition hover:border-cocoa-500 hover:bg-white;
+  }
+
+  .card {
+    @apply rounded-3xl border border-cocoa-100 bg-white shadow-[0_10px_40px_-24px_rgba(74,42,27,0.55)];
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-cocoa-200 bg-cocoa-50 px-3 py-1 text-[11px] font-medium text-cocoa-700;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-bold text-cocoa-900 sm:text-4xl;
+  }
+}
+
+.marquee {
+  animation: marquee 26s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.floaty {
+  animation: floaty 4s ease-in-out infinite;
+}
+
+@layer base {
+  input,
+  select,
+  textarea {
+    @apply w-full rounded-xl border border-cocoa-200 bg-white px-3 py-2.5 text-sm text-cocoa-900 outline-none transition placeholder:text-cocoa-300 focus:border-cocoa-500 focus:ring-2 focus:ring-cocoa-200;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    @apply h-4 w-4 cursor-pointer p-0 accent-[#8a5230];
+  }
+
+  label {
+    @apply mb-1 block text-xs font-semibold uppercase tracking-wide text-cocoa-600;
+  }
+}
