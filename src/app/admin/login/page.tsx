@@ -64,9 +64,8 @@ export default function AdminLoginPage() {
           {busy ? "Checking…" : "Login"}
         </button>
 
-        <p className="mt-4 rounded-xl bg-cocoa-50 p-3 text-center text-[11px] text-cocoa-500">
-          Demo password: <strong>vani123</strong> (change it with the
-          ADMIN_PASSWORD environment variable)
+        <p className="text-sm text-gray-500">
+          Authorized access only.
         </p>
       </form>
     </main>
