@@ -38,11 +38,9 @@ export default function SiteHeader({ config }: { config: ShopConfig }) {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
         <Link href="/" className="flex items-center gap-3">
           <span className="grid h-12 w-12 place-items-center rounded-full border-2 border-cocoa-700 text-center text-[8px] font-bold uppercase leading-[1.05] text-cocoa-800">
-            Vani&apos;s
+            Cake
             <br />
-            Heavenly
-            <br />
-            Cakes
+            Delight
           </span>
           <span className="leading-tight">
             <span className="block font-display text-lg font-bold text-cocoa-900 sm:text-xl">

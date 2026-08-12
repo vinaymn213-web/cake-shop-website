@@ -198,6 +198,9 @@ export default async function HomePage() {
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-500">
           Signature Range
         </p>
+        <p className="mt-2 max-w-2xl text-sm font-semibold text-cocoa-700">
+              Note: Our Tiramisu is available only on Thursday and Friday.
+         </p>
         <h2 className="section-title">The Tiramisu Collection ☕</h2>
         <p className="mt-2 max-w-2xl text-sm text-cocoa-600">
           Every tub is a 250 ml takeaway box, layered by hand with real
