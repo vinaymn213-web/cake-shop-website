@@ -56,6 +56,12 @@ export default function ProductCard({
           {product.shortDesc}
         </p>
 
+        {product.category === "tiramisu" ? (
+          <p className="mt-2 text-xs font-semibold text-gold-600">
+            ☕ Our Tiramisu is available only on Thursday and Friday.
+          </p>
+        ) : null}
+
         <div className="mt-2 flex flex-wrap gap-1">
           {tags.slice(0, 3).map((tag) => (
             <span key={tag} className="chip">
