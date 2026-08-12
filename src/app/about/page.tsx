@@ -10,9 +10,9 @@ import { waLink } from "@/lib/shop";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Our Story | Vani's Heavenly Cakes",
+  title: "Our Story | Cake Delight",
   description:
-    "Why customers love Vani's Heavenly Cakes — freshly prepared eggless desserts made with premium ingredients in Davanagere.",
+    "Why customers love Cake Delight — freshly prepared eggless desserts made with premium ingredients in Davanagere.",
 };
 
 const WHY = [
@@ -45,7 +45,7 @@ export default async function AboutPage() {
         <div className="card overflow-hidden">
           <img
             src="/images/hero-tiramisu.jpg"
-            alt="Vani's Heavenly Cakes"
+            alt="Cake Delight"
             className="h-64 w-full object-cover"
           />
           <div className="p-8">

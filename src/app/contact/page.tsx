@@ -7,7 +7,7 @@ import { prettyPhone, waLink } from "@/lib/shop";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Contact & Pickup | Vani's Heavenly Cakes",
+  title: "Contact & Pickup | Cake Delight",
   description:
     "Order on WhatsApp, follow on Instagram, and collect your freshly prepared dessert in Davanagere.",
 };

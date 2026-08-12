@@ -109,7 +109,7 @@ export default async function HomePage() {
             <div className="overflow-hidden rounded-[2.5rem] border-8 border-white shadow-2xl shadow-cocoa-900/20">
               <img
                 src="/images/ferrero-tiramisu.jpg"
-                alt="Classic tiramisu by Vani's Heavenly Cakes"
+                alt="Classic tiramisu by Cake Delight"
                 className="h-[320px] w-full object-cover sm:h-[440px]"
               />
             </div>

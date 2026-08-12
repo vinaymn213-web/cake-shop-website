@@ -7,7 +7,7 @@ import { normalisePhone, prettyPhone, whatsappHref } from "@/lib/shop";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Opening WhatsApp… | Vani's Heavenly Cakes",
+  title: "Opening WhatsApp… | Cake Delight",
   robots: { index: false, follow: false },
 };
 

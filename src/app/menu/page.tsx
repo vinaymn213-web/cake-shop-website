@@ -7,7 +7,7 @@ import { getProducts, getShopConfig } from "@/lib/data";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Our Menu | Vani's Heavenly Cakes",
+  title: "Our Menu | Cake Delight",
   description:
     "Tiramisu tubs, puddle cake, rasmalai tres leches, fudgy brownies, millet protein cakes and customised cakes. Book instantly on WhatsApp.",
 };

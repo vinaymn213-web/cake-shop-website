@@ -1,4 +1,4 @@
-# 🍰 Vani's Heavenly Cakes — Website + Owner Dashboard
+# 🍰  Cake Delight— Website + Owner Dashboard
 
 A complete cake-shop website (IGP-style browsing experience) where **Book Now opens WhatsApp
 directly** with the cake photo, name, size, quantity and price already typed out — plus a

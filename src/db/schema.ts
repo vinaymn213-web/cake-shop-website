@@ -56,7 +56,7 @@ export const bookings = pgTable("bookings", {
 /** Single-row store config so the owner can change the WhatsApp number herself. */
 export const settings = pgTable("settings", {
   id: integer("id").primaryKey().default(1),
-  shopName: text("shop_name").notNull().default("Vani's Heavenly Cakes"),
+  shopName: text("shop_name").notNull().default("Cake Delight"),
   tagline: text("tagline").notNull().default("Freshly Made with Love"),
   whatsappNumber: text("whatsapp_number").notNull().default("918660345846"),
   instagram: text("instagram").notNull().default("vani_heavenly_cakes"),

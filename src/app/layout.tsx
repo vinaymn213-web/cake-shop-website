@@ -3,18 +3,18 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Vani's Heavenly Cakes | Eggless Tiramisu & Custom Cakes in Davanagere",
+  title: "Cake Delight | Eggless Tiramisu & Custom Cakes in Davanagere",
   description:
     "Freshly made with love. Authentic eggless tiramisu, premium desserts, brownies, healthy millet cakes and customised cakes in Davanagere. Book instantly on WhatsApp.",
   keywords: [
     "tiramisu Davanagere",
     "eggless cake Davanagere",
     "custom cake booking",
-    "Vani's Heavenly Cakes",
+    "Cake Delight",
     "brownies Davanagere",
   ],
   openGraph: {
-    title: "Vani's Heavenly Cakes",
+    title: "Cake Delight",
     description:
       "Authentic eggless tiramisu, premium desserts & customised cakes. Book on WhatsApp.",
     type: "website",

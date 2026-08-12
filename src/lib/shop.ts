@@ -15,7 +15,7 @@ export type ShopConfig = {
 };
 
 export const DEFAULT_SHOP: ShopConfig = {
-  shopName: "Vani's Heavenly Cakes",
+  shopName: "Cake Delight",
   tagline: "Freshly Made with Love",
   whatsappNumber: "918660345846",
   instagram: "cake_delight_by_vani",
@@ -113,7 +113,7 @@ export type BookingPayload = {
 /**
  * The message the customer sees pre-typed inside WhatsApp.
  *
- * 🎂 Hello Vani's Heavenly Cakes!
+ *  Hello Cake Delight!
  *
  * I would like to book the following cake.
  *
@@ -133,33 +133,33 @@ export function buildBookingMessage(
   const total = item.price * item.quantity;
   const lines: string[] = [];
 
-  lines.push(`🎂 Hello ${config.shopName}!`);
+  lines.push(` Hello ${config.shopName}!`);
   lines.push("");
   lines.push("I would like to book the following cake.");
   lines.push("");
-  lines.push(`🍰 Cake Name: ${item.name}`);
+  lines.push(` Cake Name: ${item.name}`);
 
   if (item.priceOnRequest || item.price <= 0) {
-    lines.push("💰 Price: On Request (please share a quote)");
+    lines.push(" Price: On Request (please share a quote)");
   } else {
-    lines.push(`💰 Price: ${formatINR(item.price)}`);
+    lines.push(` Price: ${formatINR(item.price)}`);
   }
 
-  lines.push(`⚖️ Weight: ${item.unit}`);
+  lines.push(` Weight: ${item.unit}`);
 
   if (item.quantity > 1) {
-    lines.push(`🔢 Quantity: ${item.quantity}`);
+    lines.push(` Quantity: ${item.quantity}`);
     if (!item.priceOnRequest && item.price > 0) {
-      lines.push(`🧾 Total Amount: ${formatINR(total)}`);
+      lines.push(` Total Amount: ${formatINR(total)}`);
     }
   }
 
   const photo = absoluteUrl(item.image);
-  if (photo) lines.push(`🖼️ Cake Image: ${photo}`);
+  if (photo) lines.push(` Cake Image: ${photo}`);
 
-  if (item.customerName) lines.push(`🙋 Name: ${item.customerName}`);
-  if (item.eventDate) lines.push(`📅 Needed On: ${item.eventDate}`);
-  if (item.notes) lines.push(`📝 Note: ${item.notes}`);
+  if (item.customerName) lines.push(` Name: ${item.customerName}`);
+  if (item.eventDate) lines.push(` Needed On: ${item.eventDate}`);
+  if (item.notes) lines.push(` Note: ${item.notes}`);
 
   lines.push("");
   lines.push("Please let me know the availability.");
@@ -186,18 +186,18 @@ export function buildQuoteMessage(
   config: ShopConfig = DEFAULT_SHOP,
 ): string {
   const lines: string[] = [];
-  lines.push(`🎂 Hello ${config.shopName}!`);
+  lines.push(` Hello ${config.shopName}!`);
   lines.push("");
   lines.push("I would like to book a customised cake.");
   lines.push("");
-  if (q.customerName) lines.push(`🙋 Name: ${q.customerName}`);
-  if (q.customerPhone) lines.push(`📞 Phone: ${q.customerPhone}`);
-  if (q.occasion) lines.push(`🎉 Occasion: ${q.occasion}`);
-  if (q.servings) lines.push(`⚖️ Servings / Weight: ${q.servings}`);
-  if (q.flavor) lines.push(`🍫 Preferred Flavour: ${q.flavor}`);
-  if (q.theme) lines.push(`🎨 Theme / Reference: ${q.theme}`);
-  if (q.eventDate) lines.push(`📅 Delivery / Pickup Date: ${q.eventDate}`);
-  if (q.notes) lines.push(`📝 Note: ${q.notes}`);
+  if (q.customerName) lines.push(` Name: ${q.customerName}`);
+  if (q.customerPhone) lines.push(` Phone: ${q.customerPhone}`);
+  if (q.occasion) lines.push(` Occasion: ${q.occasion}`);
+  if (q.servings) lines.push(` Servings / Weight: ${q.servings}`);
+  if (q.flavor) lines.push(` Preferred Flavour: ${q.flavor}`);
+  if (q.theme) lines.push(` Theme / Reference: ${q.theme}`);
+  if (q.eventDate) lines.push(` Delivery / Pickup Date: ${q.eventDate}`);
+  if (q.notes) lines.push(` Note: ${q.notes}`);
   lines.push("");
   lines.push("Please let me know the price and availability.");
   lines.push("");

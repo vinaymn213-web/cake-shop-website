@@ -8,7 +8,7 @@ import { getShopConfig } from "@/lib/data";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Customised Cakes | Vani's Heavenly Cakes",
+  title: "Customised Cakes | Cake Delight",
   description:
     "Custom birthday, anniversary, wedding and baby shower cakes in Davanagere. Share your requirement and get a personalised quote on WhatsApp.",
 };
