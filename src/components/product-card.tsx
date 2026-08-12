@@ -58,7 +58,7 @@ export default function ProductCard({
 
         {product.category === "tiramisu" ? (
           <p className="mt-2 text-xs font-semibold text-gold-600">
-             Our Tiramisu is available only on Thursday and Friday.
+             Note:Our Tiramisu is available only on Thursday and Friday.
           </p>
         ) : null}
 
