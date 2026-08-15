@@ -50,7 +50,7 @@ export default function MenuBrowser({
 
   return (
     <div>
-      <div className="card sticky top-[92px] z-30 mb-6 flex flex-col gap-3 p-4">
+      <div className="card mb-6 flex flex-col gap-3 p-4">
         <div className="flex flex-wrap gap-2">
           {CATEGORIES.map((cat) => (
             <button
