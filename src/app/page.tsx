@@ -70,7 +70,7 @@ export default async function HomePage() {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/menu" className="btn-primary">
-                🍰 View Full Menu
+                 View Full Menu
               </Link>
               <a
                 href={waLink(
