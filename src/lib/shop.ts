@@ -28,12 +28,12 @@ export const DEFAULT_SHOP: ShopConfig = {
 };
 
 export const CATEGORIES = [
-  { key: "all", label: "All Desserts", emoji: "🍰" },
-  { key: "tiramisu", label: "Tiramisu", emoji: "☕" },
-  { key: "cakes", label: "Cakes & Tubs", emoji: "🎂" },
-  { key: "brownies", label: "Brownies", emoji: "🍫" },
-  { key: "healthy", label: "Healthy & Festive", emoji: "🌾" },
-  { key: "custom", label: "Customised Cakes", emoji: "✨" },
+  { key: "all", label: "All Desserts", emoji: "" },
+  { key: "tiramisu", label: "Tiramisu", emoji: "" },
+  { key: "cakes", label: "Cakes & Tubs", emoji: "" },
+  { key: "brownies", label: "Brownies", emoji: "" },
+  { key: "healthy", label: "Healthy & Festive", emoji: "" },
+  { key: "custom", label: "Customised Cakes", emoji: "" },
 ] as const;
 
 export type CategoryKey = (typeof CATEGORIES)[number]["key"];
